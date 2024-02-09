@@ -14,7 +14,7 @@ div#flex-father {
 #index {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/home-hero.jpg);
+    background-image: url(../img/home-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -450,11 +450,11 @@ input[type=text]:invalid {
     border: 1px solid red;
 }
 
-p.userprivacity {
+p.user-privacy {
     margin: 20px 0;
 }
 
-#privacity-label {
+#privacy-label {
     margin-left: 10px;
     width: auto;
 }
