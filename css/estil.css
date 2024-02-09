@@ -420,6 +420,10 @@ input[type=submit] {
     width: 100%;
 }
 
+button[type="submit"]:hover {
+    background-color: #070e58;
+}
+
 input[type=date],
 input[type=email],
 input[type=tel],
