@@ -1,0 +1,20 @@
+{
+  "name": "m4.252-pac2",
+  "version": "1.0.0",
+  "description": "La PAC consta d'un exercici pràctic on haureu de realitzar un petit lloc web dedicat a concerts, format per quatre pàgines que estaran vinculades mitjançant un menú de navegació.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbuj-UOC/M4.252-PAC2.git"
+  },
+  "author": "Robert Buj <rbuj@uoc.edu>",
+  "license": "CC0-1.0",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/rbuj-UOC/M4.252-PAC2/issues"
+  },
+  "homepage": "https://github.com/rbuj-UOC/M4.252-PAC2#readme"
+}
