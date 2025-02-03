@@ -1,201 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ca">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compra les teves entrades</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
-    <link rel="stylesheet" href="css/estil.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/estil.css" />
+  </head>
 
-<body>
+  <body>
     <div id="flex-father" class="container">
-        <header id="header-regular">
-            <div id="navheader">
-                <nav>
-                    <a href="index.html"><img src="img/logo.svg" alt="logo image"></a>
-                    <ul>
-                        <li><a href="info.html">Informació</a></li>
-                        <li><a href="calendari.html">Calendari</a></li>
-                        <li class="current">Entrades</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main id="main-regular" class="folio">
-            <h1>Compra les teves entrades</h1>
-            <div id="desc-page">
-                <p>Ser part de l'Amped Festival és una experiència que no et voldràs perdre. Ja sigui que vulguis estar a primera fila o gaudir de l´ambient des d´un espai VIP, tenim diferents tipus d´entrades per satisfer les teves necessitats. Completa el formulari a continuació per assegurar-te estar present en aquest esdeveniment musical inigualable</p>
-            </div>
-            <form method="post">
-                <fieldset>
-                    <legend>Informació Personal</legend>
-                    <table>
-                        <tr>
-                            <td class="width-50-percentage">
-                                <label for="username">
-                                    <span>Nom: <span class="required">*</span></span>
-                                </label>
-                                <input type="text" name="name" id="username" placeholder="Nom" minlength="3" maxlength="64" pattern="[a-zA-Z'\-\s]+" title="Text de 3 a 64 caràcters, incloent l'apostrof i el guió" required>
-                            </td>
-                            <td class="width-50-percentage">
-                                <label for="usersurname">
-                                    <span>Cognoms: <span class="required">*</span></span>
-                                </label>
-                                <input type="text" name="surname" id="usersurname" placeholder="Cognoms" minlength="3" maxlength="128" pattern="[a-zA-Z'\-\s]+" title="Text de 3 a 128 caràcters, incloent l'apostrof i el guió" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="width-50-percentage">
-                                <label for="usermail">
-                                    <span>Correu Electrònic: <span class="required">*</span></span>
-                                </label>
-                                <input type="email" name="email" id="usermail" placeholder="E-mail" required>
-                            </td>
-                            <td class="width-50-percentage">
-                                <label for="usertel">
-                                    <span>Telèfon:</span>
-                                </label>
-                                <input type="tel" name="tel" id="usertel" placeholder="Telèfon de contacte">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="width-50-percentage">
-                                <label for="userbirth">
-                                    <span>Data de naixement: <span class="required">*</span></span>
-                                </label>
-                                <input type="date" name="birth" id="userbirth" required>
-                            </td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </fieldset>
-                <fieldset>
-                    <legend>Tipus d'Entrada</legend>
-                    <p>Tria el tipus d'entrada que prefereixes per a la teva experiència a l'Amped Festival. Cada opció ha estat dissenyada per proporcionar-te el millor accés i comoditats durant l'esdeveniment. </p>
-                    <p>
-                        <label for="usertickettype">
-                            <span>Selecciona la teva Entrada:</span>
-                        </label>
-                        <select name="tickettype" id="usertickettype">
-                            <option value="t1">Entrada General - 50€</option>
-                            <option value="t2">Entrada VIP - 150€ (inclou accés backstage i zona preferencial)</option>
-                            <option value="t3">Passi de dos Dies - 120€</option>
-                        </select>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Mètode de Pagament</legend>
-                    <ul>
-                        <li>
-                            <label for="payment-1">
-                                <input type="radio" id="payment-1" name="payment" class="payment-method" value="P">
-                                Paypal
-                            </label>
-                        </li>
-                        <li>
-                            <label for="payment-2">
-                                <input type="radio" id="payment-2" name="payment" class="payment-method" value="T">
-                                Targeta de crèdit
-                            </label>
-                        </li>
-                        <li>
-                            <label for="payment-3">
-                                <input type="radio" id="payment-3" name="payment" class="payment-method" value="B">
-                                Bizum
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Informació de Targeta</legend>
-                    <table>
-                        <tr>
-                            <td class="width-50-percentage">
-                                <label for="userccnum">
-                                    <span>Número de targeta de crèdit/dèbit:</span>
-                                </label>
-                                <input type="text" name="ccnum" id="userccnum" placeholder="1234123412341234" pattern="[0-9]{16}" title="16 dígits">
-                            </td>
-                            <td class="width-25-percentage">
-                                <label for="userccdate">
-                                    <span>Data d'expiració:</span>
-                                </label>
-                                <input type="text" name="ccdate" id="userccdate" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" title="MM/YY">
-                            </td>
-                            <td class="width-25-percentage">
-                                <label for="usercccvc">
-                                    <span>CVC:</span>
-                                </label>
-                                <input type="text" name="cccvc" id="usercccvc" placeholder="123" pattern="[0-9]{3}" title="3 dígits">
-                            </td>
-                        </tr>
-                    </table>
-                </fieldset>
-                <fieldset>
-                    <legend>Adreça de tramesa</legend>
-                    <table>
-                        <tr>
-                            <td colspan="3" class="width-100-percentage">
-                                <label for="useraddr">
-                                    <span>Adreça: <span class="required">*</span></span>
-                                </label>
-                                <input type="text" name="addr" id="useraddr" placeholder="Adreça" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="width-33-percentage">
-                                <label for="usercity">
-                                    <span>Població: <span class="required">*</span></span>
-                                </label>
-                                <input type="text" name="dir" id="usercity" placeholder="Població" required>
-                            </td>
-                            <td class="width-33-percentage">
-                                <label for="userpostalcode">
-                                    <span>Codi postal: <span class="required">*</span></span>
-                                </label>
-                                <input type="text" name="postalcode" id="userpostalcode" placeholder="C. Postal" required>
-                            </td>
-                            <td class="width-33-percentage">
-                                <label for="usercountry">
-                                    <span>País:</span>
-                                </label>
-                                <select name="country" id="usercountry">
-                                    <option value="SP">Espanya</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </table>
-                </fieldset>
-                <p>
-                    <label for="usercomment">
-                        <span>Comentaris o peticions especials</span>
-                    </label>
-                    <textarea name="comment" id="usercomment" rows="5" cols="33"></textarea>
-                </p>
-                <p class="user-privacy">
-                    <input type="checkbox" name="privacy" id="user-privacy">
-                    <label for="user-privacy" id="privacy-label">
-                        <span>He llegit i accepto els <a href="#">termes i condicions</a> i la <a href="#">política de privacitat</a></span>
-                    </label>
-                </p>
-                <p>
-                    <input type="submit" value="Comprar entrada">
-                </p>
-            </form>
-        </main>
-        <footer id="footer-regular" class="white-color">
-            <div class="folio">
-                <ul>
-                    <li><a href="#">Avís legal</a></li>
-                    <li><a href="#">Política de privacitat</a></li>
-                    <li><a href="#">Política de cookies</a></li>
-                </ul>
-                <p>2023 © Robert Buj Gelonch</p>
-            </div>
-        </footer>
+      <header id="header-regular">
+        <div id="navheader">
+          <nav>
+            <a href="index.html"><img src="img/logo.svg" alt="logo image" /></a>
+            <ul>
+              <li><a href="info.html">Informació</a></li>
+              <li><a href="calendari.html">Calendari</a></li>
+              <li class="current">Entrades</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="main-regular" class="folio">
+        <h1>Compra les teves entrades</h1>
+        <div id="desc-page">
+          <p>Ser part de l'Amped Festival és una experiència que no et voldràs perdre. Ja sigui que vulguis estar a primera fila o gaudir de l´ambient des d´un espai VIP, tenim diferents tipus d´entrades per satisfer les teves necessitats. Completa el formulari a continuació per assegurar-te estar present en aquest esdeveniment musical inigualable</p>
+        </div>
+        <form method="post">
+          <fieldset>
+            <legend>Informació Personal</legend>
+            <table>
+              <tr>
+                <td class="width-50-percentage">
+                  <label for="username">
+                    <span>Nom: <span class="required">*</span></span>
+                  </label>
+                  <input type="text" name="name" id="username" placeholder="Nom" minlength="3" maxlength="64" pattern="[a-zA-Z'\-\s]+" title="Text de 3 a 64 caràcters, incloent l'apostrof i el guió" required />
+                </td>
+                <td class="width-50-percentage">
+                  <label for="usersurname">
+                    <span>Cognoms: <span class="required">*</span></span>
+                  </label>
+                  <input type="text" name="surname" id="usersurname" placeholder="Cognoms" minlength="3" maxlength="128" pattern="[a-zA-Z'\-\s]+" title="Text de 3 a 128 caràcters, incloent l'apostrof i el guió" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="width-50-percentage">
+                  <label for="usermail">
+                    <span>Correu Electrònic: <span class="required">*</span></span>
+                  </label>
+                  <input type="email" name="email" id="usermail" placeholder="E-mail" required />
+                </td>
+                <td class="width-50-percentage">
+                  <label for="usertel">
+                    <span>Telèfon:</span>
+                  </label>
+                  <input type="tel" name="tel" id="usertel" placeholder="Telèfon de contacte" />
+                </td>
+              </tr>
+              <tr>
+                <td class="width-50-percentage">
+                  <label for="userbirth">
+                    <span>Data de naixement: <span class="required">*</span></span>
+                  </label>
+                  <input type="date" name="birth" id="userbirth" required />
+                </td>
+                <td></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Tipus d'Entrada</legend>
+            <p>Tria el tipus d'entrada que prefereixes per a la teva experiència a l'Amped Festival. Cada opció ha estat dissenyada per proporcionar-te el millor accés i comoditats durant l'esdeveniment.</p>
+            <p>
+              <label for="usertickettype">
+                <span>Selecciona la teva Entrada:</span>
+              </label>
+              <select name="tickettype" id="usertickettype">
+                <option value="t1">Entrada General - 50€</option>
+                <option value="t2">Entrada VIP - 150€ (inclou accés backstage i zona preferencial)</option>
+                <option value="t3">Passi de dos Dies - 120€</option>
+              </select>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Mètode de Pagament</legend>
+            <ul>
+              <li>
+                <label for="payment-1">
+                  <input type="radio" id="payment-1" name="payment" class="payment-method" value="P" />
+                  Paypal
+                </label>
+              </li>
+              <li>
+                <label for="payment-2">
+                  <input type="radio" id="payment-2" name="payment" class="payment-method" value="T" />
+                  Targeta de crèdit
+                </label>
+              </li>
+              <li>
+                <label for="payment-3">
+                  <input type="radio" id="payment-3" name="payment" class="payment-method" value="B" />
+                  Bizum
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Informació de Targeta</legend>
+            <table>
+              <tr>
+                <td class="width-50-percentage">
+                  <label for="userccnum">
+                    <span>Número de targeta de crèdit/dèbit:</span>
+                  </label>
+                  <input type="text" name="ccnum" id="userccnum" placeholder="1234123412341234" pattern="[0-9]{16}" title="16 dígits" />
+                </td>
+                <td class="width-25-percentage">
+                  <label for="userccdate">
+                    <span>Data d'expiració:</span>
+                  </label>
+                  <input type="text" name="ccdate" id="userccdate" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" title="MM/YY" />
+                </td>
+                <td class="width-25-percentage">
+                  <label for="usercccvc">
+                    <span>CVC:</span>
+                  </label>
+                  <input type="text" name="cccvc" id="usercccvc" placeholder="123" pattern="[0-9]{3}" title="3 dígits" />
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Adreça de tramesa</legend>
+            <table>
+              <tr>
+                <td colspan="3" class="width-100-percentage">
+                  <label for="useraddr">
+                    <span>Adreça: <span class="required">*</span></span>
+                  </label>
+                  <input type="text" name="addr" id="useraddr" placeholder="Adreça" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="width-33-percentage">
+                  <label for="usercity">
+                    <span>Població: <span class="required">*</span></span>
+                  </label>
+                  <input type="text" name="dir" id="usercity" placeholder="Població" required />
+                </td>
+                <td class="width-33-percentage">
+                  <label for="userpostalcode">
+                    <span>Codi postal: <span class="required">*</span></span>
+                  </label>
+                  <input type="text" name="postalcode" id="userpostalcode" placeholder="C. Postal" required />
+                </td>
+                <td class="width-33-percentage">
+                  <label for="usercountry">
+                    <span>País:</span>
+                  </label>
+                  <select name="country" id="usercountry">
+                    <option value="SP">Espanya</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <p>
+            <label for="usercomment">
+              <span>Comentaris o peticions especials</span>
+            </label>
+            <textarea name="comment" id="usercomment" rows="5" cols="33"></textarea>
+          </p>
+          <p class="user-privacy">
+            <input type="checkbox" name="privacy" id="user-privacy" />
+            <label for="user-privacy" id="privacy-label">
+              <span>He llegit i accepto els <a href="#">termes i condicions</a> i la <a href="#">política de privacitat</a></span>
+            </label>
+          </p>
+          <p>
+            <input type="submit" value="Comprar entrada" />
+          </p>
+        </form>
+      </main>
+      <footer id="footer-regular" class="white-color">
+        <div class="folio">
+          <ul>
+            <li><a href="#">Avís legal</a></li>
+            <li><a href="#">Política de privacitat</a></li>
+            <li><a href="#">Política de cookies</a></li>
+          </ul>
+          <p>2023 © Robert Buj Gelonch</p>
+        </div>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>

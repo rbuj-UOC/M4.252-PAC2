@@ -4,6 +4,7 @@
   "description": "La PAC consta d'un exercici pràctic on haureu de realitzar un petit lloc web dedicat a concerts, format per quatre pàgines que estaran vinculades mitjançant un menú de navegació.",
   "main": "index.js",
   "scripts": {
+    "format": "prettier ./src --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +22,6 @@
     "prettier": "^3.4.2"
   },
   "devDependencies": {
-    "@awmottaz/prettier-plugin-void-html": "^1.7.0",
     "@eslint/js": "^9.19.0",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
