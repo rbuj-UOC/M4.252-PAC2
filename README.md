@@ -1,3 +1,5 @@
+[![Deploy static content to Pages](https://github.com/rbuj-UOC/M4.252-PAC2/actions/workflows/static.yml/badge.svg)](https://github.com/rbuj-UOC/M4.252-PAC2/actions/workflows/static.yml)
+
 # PAC2
 
 La PAC consta d'un exercici pràctic on haureu de realitzar un petit lloc web dedicat a concerts, format
